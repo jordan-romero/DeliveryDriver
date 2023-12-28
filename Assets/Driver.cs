@@ -6,8 +6,9 @@ public class Driver : MonoBehaviour
 {
     // these variables don't change so they do not need to be updated every frame 
     [SerializeField] float steerSpeed = 300f;
-    
      [SerializeField] float moveSpeed =  20f;
+     [SerializeField] float slowSpeed =  15f;
+    [SerializeField] float boostSpeed =  30f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class Driver : MonoBehaviour
         // variable is scoped to this update -- this allows this to update and calc every frame 
 
         transform.Rotate(0, 0, -steerAmount); 
+        if
         transform.Translate(0, moveAmount, 0);
     }
 }
