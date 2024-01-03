@@ -17,11 +17,11 @@ public class Driver : MonoBehaviour
             } 
         }
 
-    void OnCollisionEnter2D(Collision2D other) {
-        if(other.tag == "Bump") {
-            moveSpeed = slowSpeed;
-        }
+    void OnCollisionEnter2D(Collision2D other) 
+    {
+        moveSpeed = slowSpeed;    
     }
+
 
     // Update is called once per frame
     void Update()
